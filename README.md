@@ -53,7 +53,7 @@ Octomind has a `variety` capability in octomind-tap. Its default provider is thi
 variety = "unsame"
 ```
 
-Then tell the AI in your instructions to call `variety_pick` before writing each piece, to follow the protocol, and to run `variety_check` on the draft.
+In Claude Code or Claude Desktop, tell the AI in your instructions to call `variety_pick` before writing each piece, to follow the protocol, and to run `variety_check` on the draft. In Octomind the `content-variety` skill already says this.
 
 ### Settings
 
@@ -95,12 +95,11 @@ The sample is small (one model, 8 inputs). The inputs, the method and the per-in
 
 ## When you need more than random picks
 
-variety-mcp keeps texts from repeating each other. It does not choose well for a given input, and it has no memory of what worked:
+variety-mcp keeps texts from repeating each other. It does not choose for a given input, and it has no memory of what worked:
 
 - It does not read your input. The pick is random, so it can suggest an approach that does not fit; `avoid` is how the AI asks again.
 - The menus are fixed and generic. You cannot add your own approaches without editing the package files, and there are no voice or always/never rules per account.
 - It does not learn. Nothing about which texts worked changes later picks.
-- It has no judge. Nothing checks whether a draft is any good; `variety_check` only finds known AI-writing tells and repeated openings.
 
 [Unsame](https://unsame.io) is a hosted service built for these gaps. You write a playbook per goal with your own approaches, your voice and your always/never rules. An AI judge matches each input to a fitting approach, and the playbook learns from the results you report. It is closed source and runs on Unsame's servers. variety-mcp stays free and local.
 
