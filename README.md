@@ -53,7 +53,7 @@ Octomind has a `variety` capability in octomind-tap. Its default provider is thi
 variety = "unsame"
 ```
 
-In Claude Code or Claude Desktop, tell the AI in your instructions to call `variety_pick` before writing each piece, to follow the protocol, and to run `variety_check` on the draft. In Octomind the `content-variety` skill already says this.
+In Claude Code or Claude Desktop, tell the AI in your instructions to call `variety_pick` before writing each piece, to follow the protocol, and to run `variety_check` on the draft. In Octomind the `writing-variety` skill already says this.
 
 ### Settings
 
