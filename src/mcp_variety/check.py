@@ -6,8 +6,8 @@ from dataclasses import asdict, dataclass
 from statistics import mean, pstdev
 from typing import Any
 
-from variety_mcp.history import History
-from variety_mcp.rules import (
+from mcp_variety.history import History
+from mcp_variety.rules import (
     CONTRAST,
     EM_DASH,
     EXCLAMATIONS,

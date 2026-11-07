@@ -2,8 +2,8 @@ import math
 
 import pytest
 
-from variety_mcp.kinds import load_kinds
-from variety_mcp.select import AvoidError, choose
+from mcp_variety.kinds import load_kinds
+from mcp_variety.select import AvoidError, choose
 
 WINDOW = 12
 PICKS = 300

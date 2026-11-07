@@ -1,6 +1,6 @@
 import pytest
 
-from variety_mcp.history import History
+from mcp_variety.history import History
 
 TEST_WINDOW = 12
 

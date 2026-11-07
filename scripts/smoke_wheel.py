@@ -1,6 +1,6 @@
 """Start the built wheel in an isolated uvx environment and check it answers MCP over stdio.
 
-Usage: uv run python scripts/smoke_wheel.py dist/variety_mcp-0.1.0-py3-none-any.whl
+Usage: uv run python scripts/smoke_wheel.py dist/mcp_variety-0.1.0-py3-none-any.whl
 """
 
 import asyncio
@@ -18,7 +18,7 @@ async def smoke(wheel: str) -> None:
     with tempfile.TemporaryDirectory() as state_dir:
         params = StdioServerParameters(
             command="uvx",
-            args=["--from", wheel, "variety-mcp"],
+            args=["--from", wheel, "mcp-variety"],
             env={"VARIETY_MCP_STATE_DIR": state_dir},
         )
         async with stdio_client(params) as (read, write), ClientSession(read, write) as session:

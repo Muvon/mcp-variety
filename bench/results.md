@@ -7,7 +7,7 @@ Without: the prompt is `Write a <kind> about: <input>`. With: the same prompt, p
 
 ## Mean over all inputs
 
-| Measure | Without variety-mcp | With variety-mcp |
+| Measure | Without mcp-variety | With mcp-variety |
 |---|---|---|
 | Same opening (share of text pairs with the same first 3 words) | 58.3% | 2.5% |
 | Shared 3-word phrases (share of a text's phrases found in another text) | 46.7% | 7.4% |

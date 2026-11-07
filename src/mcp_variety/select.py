@@ -5,8 +5,8 @@ from collections.abc import Sequence
 from dataclasses import dataclass
 from itertools import product
 
-from variety_mcp.history import PickRecord
-from variety_mcp.kinds import AXIS_ORDER, Approach, AxisValue, Kind
+from mcp_variety.history import PickRecord
+from mcp_variety.kinds import AXIS_ORDER, Approach, AxisValue, Kind
 
 # Picks must not be predictable, so draw from the operating system instead of a seeded generator.
 SYSTEM_RANDOM = random.SystemRandom()

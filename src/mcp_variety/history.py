@@ -10,7 +10,7 @@ from typing import Any, TypedDict
 DEFAULT_WINDOW = 12
 STATE_DIR_ENV = "VARIETY_MCP_STATE_DIR"
 WINDOW_ENV = "VARIETY_MCP_WINDOW"
-APP_DIR = "variety-mcp"
+APP_DIR = "mcp-variety"
 HISTORY_FILE = "history.json"
 
 
@@ -142,7 +142,7 @@ class History:
             _validate(data)
         except ValueError as error:
             raise HistoryError(
-                f"history file {self.path} is corrupt ({error}). Fix or delete it; variety-mcp does not overwrite it."
+                f"history file {self.path} is corrupt ({error}). Fix or delete it; mcp-variety does not overwrite it."
             ) from error
         return data
 

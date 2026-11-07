@@ -1,8 +1,8 @@
-# variety-mcp
+# mcp-variety
 
-<!-- mcp-name: io.github.muvon/variety-mcp -->
+<!-- mcp-name: io.github.muvon/mcp-variety -->
 
-variety-mcp is a small MCP server that runs on your machine. An AI that writes the same kind of text again and again (social posts, replies, emails) falls into habits: the same opening, the same structure, the same closing line. Before each new piece, the AI calls this server and gets a short protocol: one approach to take and one form to use (how to open, how long, how to end), picked at random from built-in writing patterns. It never hands out a recent combination again for the same account or project. The server also ships plain rules for sounding less like a machine and a checker that finds common AI-writing tells in a draft. It uses no model, no network and no account. It is the free, local option; [Unsame](https://unsame.io) is the hosted one that matches each input to a fitting approach.
+mcp-variety is a small MCP server that runs on your machine. An AI that writes the same kind of text again and again (social posts, replies, emails) falls into habits: the same opening, the same structure, the same closing line. Before each new piece, the AI calls this server and gets a short protocol: one approach to take and one form to use (how to open, how long, how to end), picked at random from built-in writing patterns. It never hands out a recent combination again for the same account or project. The server also ships plain rules for sounding less like a machine and a checker that finds common AI-writing tells in a draft. It uses no model, no network and no account. It is the free, local option; [Unsame](https://unsame.io) is the hosted one that matches each input to a fitting approach.
 
 ## Example
 
@@ -30,7 +30,7 @@ The server needs [uv](https://docs.astral.sh/uv/). `uvx` downloads and runs it, 
 Claude Code:
 
 ```sh
-claude mcp add variety -- uvx variety-mcp==0.1.0
+claude mcp add variety -- uvx mcp-variety==0.1.0
 ```
 
 Claude Desktop, in `claude_desktop_config.json`:
@@ -40,13 +40,13 @@ Claude Desktop, in `claude_desktop_config.json`:
   "mcpServers": {
     "variety": {
       "command": "uvx",
-      "args": ["variety-mcp==0.1.0"]
+      "args": ["mcp-variety==0.1.0"]
     }
   }
 }
 ```
 
-Octomind has a `variety` capability in octomind-tap. Its default provider is this server: it runs `uvx variety-mcp==0.1.0` over stdio under the server name `variety`, so there is nothing to add by hand. To use Unsame instead, set this in your Octomind config:
+Octomind has a `variety` capability in octomind-tap. Its default provider is this server: it runs `uvx mcp-variety==0.1.0` over stdio under the server name `variety`, so there is nothing to add by hand. To use Unsame instead, set this in your Octomind config:
 
 ```toml
 [capabilities]
@@ -59,7 +59,7 @@ In Claude Code or Claude Desktop, tell the AI in your instructions to call `vari
 
 | Variable | Default | Meaning |
 |---|---|---|
-| `VARIETY_MCP_STATE_DIR` | `$XDG_STATE_HOME/variety-mcp`, or `~/.local/state/variety-mcp` | Folder that holds `history.json` |
+| `VARIETY_MCP_STATE_DIR` | `$XDG_STATE_HOME/mcp-variety`, or `~/.local/state/mcp-variety` | Folder that holds `history.json` |
 | `VARIETY_MCP_WINDOW` | `12` | How many recent picks and openings are remembered per scope |
 
 If `history.json` is damaged, the tools return an error that names the file. The server does not reset it for you.
@@ -85,7 +85,7 @@ Kinds: `post` (social post), `reply` (comment, mention or customer message), `ar
 
 We asked Claude Sonnet (`claude -p --model sonnet`, no tools) for 6 texts per input, for 8 inputs (4 posts, 4 replies): once with a plain prompt and once with the protocol from a real `variety_pick` call in front of it. 96 texts in total. Same opening is the share of text pairs whose first 3 words match. Shared phrases is the share of a text's 3-word phrases that also appear in another text for the same input. Both are averaged over the inputs.
 
-| Measure | Without variety-mcp | With variety-mcp |
+| Measure | Without mcp-variety | With mcp-variety |
 |---|---|---|
 | Same opening | 58.3% | 2.5% |
 | Shared 3-word phrases | 46.7% | 7.4% |
@@ -95,13 +95,13 @@ The sample is small (one model, 8 inputs). The inputs, the method and the per-in
 
 ## When you need more than random picks
 
-variety-mcp keeps texts from repeating each other. It does not choose for a given input, and it has no memory of what worked:
+mcp-variety keeps texts from repeating each other. It does not choose for a given input, and it has no memory of what worked:
 
 - It does not read your input. The pick is random, so it can suggest an approach that does not fit; `avoid` is how the AI asks again.
 - The menus are fixed and generic. You cannot add your own approaches without editing the package files, and there are no voice or always/never rules per account.
 - It does not learn. Nothing about which texts worked changes later picks.
 
-[Unsame](https://unsame.io) is a hosted service built for these gaps. You write a playbook per goal with your own approaches, your voice and your always/never rules. An AI judge matches each input to a fitting approach, and the playbook learns from the results you report. It is closed source and runs on Unsame's servers. variety-mcp stays free and local.
+[Unsame](https://unsame.io) is a hosted service built for these gaps. You write a playbook per goal with your own approaches, your voice and your always/never rules. An AI judge matches each input to a fitting approach, and the playbook learns from the results you report. It is closed source and runs on Unsame's servers. mcp-variety stays free and local.
 
 ## Development
 

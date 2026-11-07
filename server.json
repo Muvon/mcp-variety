@@ -1,18 +1,18 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.muvon/variety-mcp",
-  "title": "variety-mcp",
+  "name": "io.github.muvon/mcp-variety",
+  "title": "mcp-variety",
   "description": "Gives an AI a different approach and form for each piece of a repeated writing job.",
   "repository": {
-    "url": "https://github.com/muvon/variety-mcp",
+    "url": "https://github.com/muvon/mcp-variety",
     "source": "github"
   },
-  "websiteUrl": "https://github.com/muvon/variety-mcp",
+  "websiteUrl": "https://github.com/muvon/mcp-variety",
   "version": "0.1.0",
   "packages": [
     {
       "registryType": "pypi",
-      "identifier": "variety-mcp",
+      "identifier": "mcp-variety",
       "version": "0.1.0",
       "transport": {
         "type": "stdio"

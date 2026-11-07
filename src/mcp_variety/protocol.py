@@ -3,9 +3,9 @@
 from collections.abc import Mapping
 from typing import Any
 
-from variety_mcp.kinds import Kind
-from variety_mcp.rules import avoid_block
-from variety_mcp.select import Pick
+from mcp_variety.kinds import Kind
+from mcp_variety.rules import avoid_block
+from mcp_variety.select import Pick
 
 AXIS_PHRASES = {
     "hook": "hook with {}",

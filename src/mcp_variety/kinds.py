@@ -133,7 +133,7 @@ def parse_kind(kind_id: str, raw: Mapping[str, Any]) -> Kind:
 
 
 def load_kinds() -> dict[str, Kind]:
-    directory = resources.files("variety_mcp") / "kinds"
+    directory = resources.files("mcp_variety") / "kinds"
     kinds: dict[str, Kind] = {}
     for entry in sorted(directory.iterdir(), key=lambda item: item.name):
         if not entry.name.endswith(".toml"):

@@ -5,11 +5,11 @@ from typing import Any
 
 from mcp.server.fastmcp import FastMCP
 
-from variety_mcp.check import check_text
-from variety_mcp.history import ConfigError, History, state_file, window_from_env
-from variety_mcp.kinds import Kind, KindDataError, load_kinds
-from variety_mcp.protocol import HOSTED_OPTION, describe_kinds, describe_pick
-from variety_mcp.select import choose
+from mcp_variety.check import check_text
+from mcp_variety.history import ConfigError, History, state_file, window_from_env
+from mcp_variety.kinds import Kind, KindDataError, load_kinds
+from mcp_variety.protocol import HOSTED_OPTION, describe_kinds, describe_pick
+from mcp_variety.select import choose
 
 INSTRUCTIONS = (
     "Call variety_pick before writing each piece of a repeated writing job (posts, replies, emails and so on) "
@@ -26,7 +26,7 @@ def _get_kind(kinds: dict[str, Kind], name: str) -> Kind:
 
 def create_server(history: History) -> FastMCP:
     kinds = load_kinds()
-    server = FastMCP("variety-mcp", instructions=INSTRUCTIONS)
+    server = FastMCP("mcp-variety", instructions=INSTRUCTIONS)
 
     @server.tool()
     def variety_pick(kind: str, scope: str, avoid: list[str] | None = None) -> dict[str, Any]:
@@ -68,5 +68,5 @@ def main() -> None:
         history = History(state_file(), window_from_env())
         server = create_server(history)
     except (ConfigError, KindDataError) as error:
-        sys.exit(f"variety-mcp: {error}")
+        sys.exit(f"mcp-variety: {error}")
     server.run(transport="stdio")

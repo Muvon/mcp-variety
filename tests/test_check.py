@@ -1,7 +1,7 @@
 import pytest
 
-from variety_mcp.check import check_text
-from variety_mcp.rules import STOCK_PHRASES
+from mcp_variety.check import check_text
+from mcp_variety.rules import STOCK_PHRASES
 
 CLEAN = (
     "I burned two hours on a bug that turned out to be a typo. The config key said 'timout'. Not 'timeout'. "

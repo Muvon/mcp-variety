@@ -2,7 +2,7 @@ import copy
 
 import pytest
 
-from variety_mcp.kinds import (
+from mcp_variety.kinds import (
     AXIS_ORDER,
     MAX_AXIS_VALUES,
     MIN_APPROACHES,

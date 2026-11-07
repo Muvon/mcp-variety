@@ -3,7 +3,7 @@ import threading
 
 import pytest
 
-from variety_mcp.history import DEFAULT_WINDOW, ConfigError, History, HistoryError, state_file, window_from_env
+from mcp_variety.history import DEFAULT_WINDOW, ConfigError, History, HistoryError, state_file, window_from_env
 
 PICK = {"approach": "story", "form": {"opener": "number"}}
 
@@ -101,7 +101,7 @@ def test_state_file_uses_the_override(monkeypatch, tmp_path):
 def test_state_file_defaults_to_xdg_state_home(monkeypatch, tmp_path):
     monkeypatch.delenv("VARIETY_MCP_STATE_DIR", raising=False)
     monkeypatch.setenv("XDG_STATE_HOME", str(tmp_path))
-    assert state_file() == tmp_path / "variety-mcp" / "history.json"
+    assert state_file() == tmp_path / "mcp-variety" / "history.json"
 
 
 def test_window_defaults_and_reads_the_environment(monkeypatch):

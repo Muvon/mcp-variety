@@ -6,7 +6,7 @@ from contextlib import asynccontextmanager
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 
-from variety_mcp.server import INSTRUCTIONS
+from mcp_variety.server import INSTRUCTIONS
 
 TOOL_NAMES = {"variety_pick", "variety_kinds", "variety_check"}
 
@@ -15,7 +15,7 @@ TOOL_NAMES = {"variety_pick", "variety_kinds", "variety_check"}
 async def session_for(state_dir, **extra_env):
     params = StdioServerParameters(
         command=sys.executable,
-        args=["-m", "variety_mcp"],
+        args=["-m", "mcp_variety"],
         env={"VARIETY_MCP_STATE_DIR": str(state_dir), **extra_env},
     )
     async with stdio_client(params) as (read, write), ClientSession(read, write) as session:
@@ -120,7 +120,7 @@ async def test_corrupt_history_is_reported_to_the_client(tmp_path):
 
 def test_bad_window_stops_the_server_with_a_message(tmp_path):
     done = subprocess.run(
-        [sys.executable, "-m", "variety_mcp"],
+        [sys.executable, "-m", "mcp_variety"],
         env={"VARIETY_MCP_STATE_DIR": str(tmp_path), "VARIETY_MCP_WINDOW": "zero", "PATH": ""},
         capture_output=True,
         text=True,

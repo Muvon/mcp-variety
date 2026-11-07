@@ -1,4 +1,4 @@
-"""Baseline benchmark: does a variety-mcp protocol make repeated texts less alike?
+"""Baseline benchmark: does a mcp-variety protocol make repeated texts less alike?
 
 For each input it writes TEXTS_PER_CONDITION texts with a plain prompt and TEXTS_PER_CONDITION texts whose prompt
 starts with a protocol from a real `variety_pick` call, then compares how alike the texts are.
@@ -28,8 +28,8 @@ from statistics import mean
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 
-from variety_mcp.check import CURLY_APOSTROPHE, check_text
-from variety_mcp.history import DEFAULT_WINDOW, STATE_DIR_ENV, History
+from mcp_variety.check import CURLY_APOSTROPHE, check_text
+from mcp_variety.history import DEFAULT_WINDOW, STATE_DIR_ENV, History
 
 BENCH_DIR = Path(__file__).parent
 INPUTS_FILE = BENCH_DIR / "inputs.toml"
@@ -88,7 +88,7 @@ def task_prompt(item: Input) -> str:
 async def fetch_missing_protocols(inputs: list[Input], cache: dict[str, dict[str, str]]) -> None:
     """Call variety_pick through the real server, one scope per input, so no combination repeats inside an input."""
     params = StdioServerParameters(
-        command=sys.executable, args=["-m", "variety_mcp"], env={STATE_DIR_ENV: str(STATE_DIR)}
+        command=sys.executable, args=["-m", "mcp_variety"], env={STATE_DIR_ENV: str(STATE_DIR)}
     )
     async with stdio_client(params) as (read, write), ClientSession(read, write) as session:
         await session.initialize()
@@ -234,7 +234,7 @@ def render(inputs: list[Input], results: dict[str, dict[str, dict[str, float]]])
         "",
         "## Mean over all inputs",
         "",
-        "| Measure | Without variety-mcp | With variety-mcp |",
+        "| Measure | Without mcp-variety | With mcp-variety |",
         "|---|---|---|",
         "| Same opening (share of text pairs with the same first 3 words) | "
         f"{percent(average(results, 'plain', 'opening'))} | {percent(average(results, 'protocol', 'opening'))} |",

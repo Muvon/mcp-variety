@@ -3,7 +3,7 @@ requires = ["hatchling>=1.27"]
 build-backend = "hatchling.build"
 
 [project]
-name = "variety-mcp"
+name = "mcp-variety"
 version = "0.1.0"
 description = "Local MCP server that gives an AI a different approach and form for each piece of a repeated writing job."
 readme = "README.md"
@@ -28,19 +28,19 @@ classifiers = [
 dependencies = ["mcp>=1.2,<2"]
 
 [project.urls]
-Homepage = "https://github.com/muvon/variety-mcp"
-Repository = "https://github.com/muvon/variety-mcp"
-Issues = "https://github.com/muvon/variety-mcp/issues"
+Homepage = "https://github.com/muvon/mcp-variety"
+Repository = "https://github.com/muvon/mcp-variety"
+Issues = "https://github.com/muvon/mcp-variety/issues"
 "Hosted alternative" = "https://unsame.io"
 
 [project.scripts]
-variety-mcp = "variety_mcp.server:main"
+mcp-variety = "mcp_variety.server:main"
 
 [dependency-groups]
 dev = ["pytest>=8", "pytest-asyncio>=0.24", "ruff>=0.8"]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/variety_mcp"]
+packages = ["src/mcp_variety"]
 
 # The benchmark and the wheel smoke test are for development; they stay out of the source archive too.
 [tool.hatch.build.targets.sdist]
