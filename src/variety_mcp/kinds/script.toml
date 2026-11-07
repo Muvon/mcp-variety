@@ -1,0 +1,142 @@
+title = "Video script"
+description = "A script for a short video."
+
+[[approaches]]
+id = "story"
+name = "Story"
+how = "Tell one small thing that happened, with a clear turn in the middle."
+
+[[approaches]]
+id = "myth-busting"
+name = "Myth buster"
+how = "Name a common belief, then show on screen where it fails."
+
+[[approaches]]
+id = "how-to"
+name = "How-to"
+how = "Show one small task being done, step by step."
+
+[[approaches]]
+id = "listicle"
+name = "List"
+how = "Give three or four items, each with one clear point and one visual."
+
+[[approaches]]
+id = "before-after"
+name = "Before and after"
+how = "Show the same situation before and after the change."
+
+[[approaches]]
+id = "lesson-learned"
+name = "Lesson learned"
+how = "Share one mistake or surprise and what you do differently now."
+
+[[approaches]]
+id = "behind-the-scenes"
+name = "Behind the scenes"
+how = "Show how the work really gets done, including the messy part."
+
+[[approaches]]
+id = "reaction"
+name = "Reaction"
+how = "React to a clip, post or comment shown on screen with your own view."
+
+[[approaches]]
+id = "experiment"
+name = "Experiment"
+how = "Run one test on camera: say what you expect, then show what actually happened."
+
+[[approaches]]
+id = "common-mistakes"
+name = "Common mistakes"
+how = "Name three mistakes people make at one task, with the fix for each shown on screen."
+
+[[approaches]]
+id = "pov-scene"
+name = "Both sides of a scene"
+how = "Play both people in a familiar situation so the viewer recognises themselves, then show the better way."
+
+[[approaches]]
+id = "viewer-question"
+name = "Viewer question"
+how = "Answer one question a viewer sent, say who asked, and show the answer instead of describing it."
+
+[[axes.hook]]
+id = "bold-claim"
+hint = "a bold claim"
+
+[[axes.hook]]
+id = "viewer-question"
+hint = "a question the video answers"
+
+[[axes.hook]]
+id = "visible-action"
+hint = "a visible action before any speech"
+
+[[axes.hook]]
+id = "number"
+hint = "a surprising number"
+
+[[axes.hook]]
+id = "mistake"
+hint = "a mistake shown happening"
+
+[[axes.opener]]
+id = "direct-address"
+hint = "a direct address to the viewer"
+
+[[axes.opener]]
+id = "mid-action"
+hint = "a line spoken as if the video started late"
+
+[[axes.opener]]
+id = "topic-line"
+hint = "one plain sentence naming the topic"
+
+[[axes.opener]]
+id = "scene-detail"
+hint = "a detail from the scene on screen"
+
+[[axes.opener]]
+id = "caption-line"
+hint = "a line that matches the text shown on screen"
+
+[[axes.length]]
+id = "15"
+hint = "about 15 seconds spoken"
+
+[[axes.length]]
+id = "30"
+hint = "about 30 seconds spoken"
+
+[[axes.length]]
+id = "45"
+hint = "about 45 seconds spoken"
+
+[[axes.length]]
+id = "60"
+hint = "about 60 seconds spoken"
+
+[[axes.length]]
+id = "90"
+hint = "about 90 seconds spoken"
+
+[[axes.ending]]
+id = "comment-question"
+hint = "a question that invites comments"
+
+[[axes.ending]]
+id = "loop-back"
+hint = "a line that loops back to the hook"
+
+[[axes.ending]]
+id = "try-today"
+hint = "one thing to try today"
+
+[[axes.ending]]
+id = "plain-stop"
+hint = "a plain stop right after the last point"
+
+[[axes.ending]]
+id = "next-video"
+hint = "a reason to watch the next video in the series"

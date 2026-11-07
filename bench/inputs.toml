@@ -1,0 +1,41 @@
+# Four realistic inputs per kind. Each reads the way a user would paste a task into a prompt.
+
+[[inputs]]
+id = "post-offline-mode"
+kind = "post"
+text = "We shipped offline mode for our field-service app. Technicians can now close a job with no signal and the data syncs when they are back online."
+
+[[inputs]]
+id = "post-bakery"
+kind = "post"
+text = "Our small bakery is launching a Saturday-only sourdough subscription: 40 loaves a week, pickup between 8 and 11."
+
+[[inputs]]
+id = "post-rebrand"
+kind = "post"
+text = "I am a freelance designer and I just finished a six-week rebrand for a family-owned hardware store."
+
+[[inputs]]
+id = "post-log-tool"
+kind = "post"
+text = "Our open source command line tool for parsing server logs just passed 5,000 stars on GitHub."
+
+[[inputs]]
+id = "reply-logout-bug"
+kind = "reply"
+text = "A customer commented on our post: 'Your app keeps logging me out every few hours. Is this a known bug?' It is a known bug and the fix ships on Thursday."
+
+[[inputs]]
+id = "reply-price-rise"
+kind = "reply"
+text = "Someone answered our pricing post: 'Why did the Pro plan go up 20% with no new features?' The price rose because of hosting costs, and two features shipped last quarter."
+
+[[inputs]]
+id = "reply-currencies"
+kind = "reply"
+text = "A user mentioned us: 'Just tried your invoice template and loved the layout. Can it handle multiple currencies?' It cannot yet. It is planned for next month."
+
+[[inputs]]
+id = "reply-remote-juniors"
+kind = "reply"
+text = "A commenter on our blog post about remote work wrote: 'This ignores how hard it is for junior people to learn remotely.' The commenter has a fair point."

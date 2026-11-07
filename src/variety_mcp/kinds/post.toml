@@ -1,0 +1,130 @@
+title = "Social post"
+description = "A post for a social network or a short community update."
+
+[[approaches]]
+id = "story"
+name = "Story"
+how = "Tell one small thing that happened to you or a customer: who was there, what went right or wrong, and what changed."
+
+[[approaches]]
+id = "data-point"
+name = "Data point"
+how = "Build the post around one real number or result, say where it came from, and say what the reader should do differently because of it."
+
+[[approaches]]
+id = "question"
+name = "Open question"
+how = "Pose a real question you are still working out, give your own tentative answer, and say what would change your mind."
+
+[[approaches]]
+id = "myth-busting"
+name = "Myth buster"
+how = "Name a belief most people in your field hold, then show with one example from your own work where it fails."
+
+[[approaches]]
+id = "how-to"
+name = "How-to"
+how = "Walk through one small task in order so the reader can do it today, naming the tool or setting at each step."
+
+[[approaches]]
+id = "lesson-learned"
+name = "Lesson learned"
+how = "Share one mistake or surprise, what it cost, and what you do differently now."
+
+[[approaches]]
+id = "behind-the-scenes"
+name = "Behind the scenes"
+how = "Show how the work really gets done, including the messy part nobody posts about."
+
+[[approaches]]
+id = "before-after-bridge"
+name = "Before, after, bridge"
+how = "Describe the situation before, the better situation after, and the one step that links them."
+
+[[approaches]]
+id = "problem-agitate-solve"
+name = "Problem, agitate, solve"
+how = "Name a problem the reader has, show what it costs them if it stays, then give the fix."
+
+[[approaches]]
+id = "listicle"
+name = "List"
+how = "Give three to five separate items, each with one clear point and nothing connecting them but the topic."
+
+[[approaches]]
+id = "quote-reaction"
+name = "Quote and reaction"
+how = "Take one line someone said or wrote, quote it exactly, and respond with your own view."
+
+[[approaches]]
+id = "hot-take"
+name = "Hot take"
+how = "State one clear opinion and back it with the strongest reason you have, then admit the best argument against it."
+
+[[axes.opener]]
+id = "number"
+hint = "a specific number or result"
+
+[[axes.opener]]
+id = "detail"
+hint = "one concrete detail"
+
+[[axes.opener]]
+id = "statement"
+hint = "a blunt statement of opinion"
+
+[[axes.opener]]
+id = "question"
+hint = "a direct question to the reader"
+
+[[axes.opener]]
+id = "quote"
+hint = "a line someone said, in quotation marks"
+
+[[axes.opener]]
+id = "moment"
+hint = "a moment in time and place, such as a weekday and an hour"
+
+[[axes.length]]
+id = "one-liner"
+hint = "about one sentence"
+
+[[axes.length]]
+id = "brief"
+hint = "about three sentences"
+
+[[axes.length]]
+id = "medium"
+hint = "about five sentences"
+
+[[axes.length]]
+id = "two-parts"
+hint = "two small paragraphs"
+
+[[axes.length]]
+id = "thread"
+hint = "a thread of four numbered posts"
+
+[[axes.ending]]
+id = "question"
+hint = "a question the reader can answer in a line"
+
+[[axes.ending]]
+id = "flat-statement"
+hint = "a flat statement with no call to action"
+
+[[axes.ending]]
+id = "next-step"
+hint = "one small thing the reader can try"
+
+[[axes.ending]]
+id = "punch-line"
+hint = "a closing line of five words or fewer"
+
+[[axes.ending]]
+id = "callback"
+hint = "a callback to the first line"
+
+[[axes.ending]]
+id = "invitation"
+hint = "an invitation to share their own experience"

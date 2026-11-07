@@ -1,0 +1,130 @@
+title = "Email"
+description = "A newsletter issue or an outreach email."
+
+[[approaches]]
+id = "direct-ask"
+name = "Direct ask"
+how = "Say what you are asking for and why this person is the right one to ask."
+
+[[approaches]]
+id = "story"
+name = "Small story"
+how = "Use a single small episode to make a point about the reader's work."
+
+[[approaches]]
+id = "value-first"
+name = "Value first"
+how = "Give one useful idea or tip the reader can use without replying, then say why you wrote."
+
+[[approaches]]
+id = "problem-agitate-solve"
+name = "Problem, agitate, solve"
+how = "Name a problem the reader has, show what it costs them, then give the fix."
+
+[[approaches]]
+id = "before-after-bridge"
+name = "Before, after, bridge"
+how = "Describe the situation before, the better situation after, and the step that links them."
+
+[[approaches]]
+id = "observation"
+name = "Observation"
+how = "Share something you noticed about the reader's company, product or field and what follows from it."
+
+[[approaches]]
+id = "proof"
+name = "Proof"
+how = "Use one concrete result for a similar person or company as the reason to read on."
+
+[[approaches]]
+id = "curated-links"
+name = "Curated links"
+how = "Pick a few items worth the reader's time and say in one line why each matters."
+
+[[approaches]]
+id = "attention-interest-desire-action"
+name = "Attention, interest, desire, action"
+how = "Get attention with one fact that matters to them, build interest with the benefit to them, add one proof point, then ask for one action."
+
+[[approaches]]
+id = "follow-up"
+name = "Follow-up with news"
+how = "Refer to your earlier message in half a clause, add one new fact since then, and ask a smaller question than before."
+
+[[approaches]]
+id = "ask-for-advice"
+name = "Ask for advice"
+how = "Ask for the reader's opinion on one specific decision you face and say why theirs counts; do not ask for a meeting."
+
+[[approaches]]
+id = "trigger-event"
+name = "Trigger event"
+how = "Anchor the email in something that just happened to the reader or their company, then connect it to what you offer."
+
+[[axes.opener]]
+id = "detail"
+hint = "a specific detail about the reader or their field"
+
+[[axes.opener]]
+id = "reason"
+hint = "a direct statement of why you are writing"
+
+[[axes.opener]]
+id = "question"
+hint = "a short question"
+
+[[axes.opener]]
+id = "number"
+hint = "a number or result"
+
+[[axes.opener]]
+id = "mutual"
+hint = "a person, place or event you both know"
+
+[[axes.opener]]
+id = "recent-event"
+hint = "something that just happened to them"
+
+[[axes.length]]
+id = "50"
+hint = "about 50 words"
+
+[[axes.length]]
+id = "100"
+hint = "about 100 words"
+
+[[axes.length]]
+id = "150"
+hint = "about 150 words"
+
+[[axes.length]]
+id = "250"
+hint = "about 250 words"
+
+[[axes.length]]
+id = "400"
+hint = "about 400 words"
+
+[[axes.ending]]
+id = "question"
+hint = "a single clear question"
+
+[[axes.ending]]
+id = "offer"
+hint = "a low-pressure offer to send more"
+
+[[axes.ending]]
+id = "sign-off"
+hint = "a plain sign-off with no ask"
+
+[[axes.ending]]
+id = "next-step"
+hint = "one concrete next step with a date or a link"
+
+[[axes.ending]]
+id = "reply-by"
+hint = "a plain date by which a reply would help"
+
+[[axes.ending]]
+id = "postscript"
+hint = "a P.S. with one extra thought"

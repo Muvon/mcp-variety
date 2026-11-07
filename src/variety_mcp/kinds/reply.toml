@@ -1,0 +1,126 @@
+title = "Reply"
+description = "A reply to a comment, a mention or a customer message."
+
+[[approaches]]
+id = "direct-answer"
+name = "Direct answer"
+how = "Answer exactly what was asked, then add the one detail that matters most."
+
+[[approaches]]
+id = "acknowledge"
+name = "Listen first"
+how = "Recognise what the person is trying to do or feeling, then help with it."
+
+[[approaches]]
+id = "clarifying-question"
+name = "Clarifying question"
+how = "Ask the one thing you need to know to give a useful answer."
+
+[[approaches]]
+id = "example"
+name = "Worked example"
+how = "Answer with one concrete example from a similar case."
+
+[[approaches]]
+id = "gentle-correction"
+name = "Gentle correction"
+how = "Say what is right in their view, then fix what is not and give the reason."
+
+[[approaches]]
+id = "build-on-it"
+name = "Build on it"
+how = "Take their point and add something new that moves it forward."
+
+[[approaches]]
+id = "point-to-source"
+name = "Point to a source"
+how = "Give the shortest route to the answer, such as a link or a step, and say what they will find."
+
+[[approaches]]
+id = "own-the-problem"
+name = "Own the problem"
+how = "Say plainly what went wrong, what you did about it, and what happens next."
+
+[[approaches]]
+id = "options-and-pick"
+name = "Options and a pick"
+how = "Give two options with the cost of each, then say which one you would choose and why."
+
+[[approaches]]
+id = "honest-no"
+name = "Honest no"
+how = "Decline the request in plain terms, give the real reason, and offer the closest thing you can do."
+
+[[approaches]]
+id = "smallest-step"
+name = "Smallest step"
+how = "Name the smallest thing they can do right now that would show whether the idea works."
+
+[[approaches]]
+id = "reframe"
+name = "Reframe"
+how = "Restate their problem from a different angle, then answer that version of it."
+
+[[axes.opener]]
+id = "name"
+hint = "the person's name or handle"
+
+[[axes.opener]]
+id = "acknowledgement"
+hint = "a direct acknowledgement of their point"
+
+[[axes.opener]]
+id = "reaction"
+hint = "a quick reaction in your own words"
+
+[[axes.opener]]
+id = "plain-statement"
+hint = "a plain statement about the topic"
+
+[[axes.opener]]
+id = "answer"
+hint = "the answer itself, in the first clause"
+
+[[axes.opener]]
+id = "thanks"
+hint = "a thank you for the specific thing they said"
+
+[[axes.length]]
+id = "fragment"
+hint = "a fragment of a few words"
+
+[[axes.length]]
+id = "one-sentence"
+hint = "about one sentence"
+
+[[axes.length]]
+id = "two-sentences"
+hint = "about two sentences"
+
+[[axes.length]]
+id = "three-or-four"
+hint = "three or four sentences"
+
+[[axes.length]]
+id = "five-or-six"
+hint = "five or six sentences"
+
+[[axes.ending]]
+id = "full-stop"
+hint = "the last fact, with nothing added"
+
+[[axes.ending]]
+id = "offer"
+hint = "an offer to help further"
+
+[[axes.ending]]
+id = "question-back"
+hint = "a question back to them"
+
+[[axes.ending]]
+id = "thanks"
+hint = "a brief thank you"
+
+[[axes.ending]]
+id = "next-step"
+hint = "what happens next and when"

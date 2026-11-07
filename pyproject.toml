@@ -1,0 +1,59 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "variety-mcp"
+version = "0.1.0"
+description = "Local MCP server that gives an AI a different approach and form for each piece of a repeated writing job."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{ name = "Muvon" }]
+keywords = ["mcp", "model-context-protocol", "writing", "ai-writing", "content", "variety", "stdio"]
+classifiers = [
+	"Development Status :: 4 - Beta",
+	"Environment :: Console",
+	"Intended Audience :: Developers",
+	"Operating System :: OS Independent",
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3 :: Only",
+	"Programming Language :: Python :: 3.11",
+	"Programming Language :: Python :: 3.12",
+	"Programming Language :: Python :: 3.13",
+	"Topic :: Text Processing :: General",
+	"Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = ["mcp>=1.2,<2"]
+
+[project.urls]
+Homepage = "https://github.com/muvon/variety-mcp"
+Repository = "https://github.com/muvon/variety-mcp"
+Issues = "https://github.com/muvon/variety-mcp/issues"
+"Hosted alternative" = "https://unsame.io"
+
+[project.scripts]
+variety-mcp = "variety_mcp.server:main"
+
+[dependency-groups]
+dev = ["pytest>=8", "pytest-asyncio>=0.24", "ruff>=0.8"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/variety_mcp"]
+
+# The benchmark and the wheel smoke test are for development; they stay out of the source archive too.
+[tool.hatch.build.targets.sdist]
+include = ["/src", "/tests", "/README.md", "/LICENSE", "/pyproject.toml", "/server.json"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"

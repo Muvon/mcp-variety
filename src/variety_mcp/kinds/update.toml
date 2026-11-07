@@ -1,0 +1,125 @@
+title = "Product update"
+description = "A product update or release note."
+
+[[approaches]]
+id = "what-changed"
+name = "What changed"
+how = "Say plainly what is different now and who it affects."
+
+[[approaches]]
+id = "problem-solved"
+name = "Problem solved"
+how = "Describe the problem users had and how the change fixes it."
+
+[[approaches]]
+id = "before-after"
+name = "Before and after"
+how = "Show the same task before the change and after it."
+
+[[approaches]]
+id = "why-we-built-it"
+name = "Why we built it"
+how = "Explain the reason behind the change, including what you tried before."
+
+[[approaches]]
+id = "how-to-use-it"
+name = "How to use it"
+how = "Show the shortest path to using the new feature."
+
+[[approaches]]
+id = "user-driven"
+name = "User driven"
+how = "Credit the feedback that led to the change and show how it was used."
+
+[[approaches]]
+id = "by-the-numbers"
+name = "By the numbers"
+how = "Put one measured result at the centre, such as speed or error rate."
+
+[[approaches]]
+id = "known-limits"
+name = "Known limits"
+how = "Say what works now, what does not yet, and what comes next."
+
+[[approaches]]
+id = "grouped-changes"
+name = "Grouped changes"
+how = "Group the changes under new, improved and fixed, one line each, ordered by how many users each affects."
+
+[[approaches]]
+id = "action-needed"
+name = "Action needed"
+how = "Lead with what the reader must do after upgrading, if anything, then list what changed."
+
+[[approaches]]
+id = "bug-story"
+name = "Bug story"
+how = "Explain one bug: what users saw, what caused it, and how the fix works."
+
+[[axes.opener]]
+id = "version"
+hint = "the version or date"
+
+[[axes.opener]]
+id = "change"
+hint = "the change in plain words"
+
+[[axes.opener]]
+id = "problem"
+hint = "the problem users had"
+
+[[axes.opener]]
+id = "number"
+hint = "a number from the release"
+
+[[axes.opener]]
+id = "user-voice"
+hint = "a line from a user who asked for it"
+
+[[axes.opener]]
+id = "action"
+hint = "what the reader needs to do"
+
+[[axes.length]]
+id = "40"
+hint = "about 40 words"
+
+[[axes.length]]
+id = "80"
+hint = "about 80 words"
+
+[[axes.length]]
+id = "150"
+hint = "about 150 words"
+
+[[axes.length]]
+id = "250"
+hint = "about 250 words"
+
+[[axes.length]]
+id = "400"
+hint = "about 400 words"
+
+[[axes.ending]]
+id = "details-link"
+hint = "a link to the full details"
+
+[[axes.ending]]
+id = "feedback"
+hint = "a request for feedback"
+
+[[axes.ending]]
+id = "coming-next"
+hint = "a note on what is coming next"
+
+[[axes.ending]]
+id = "last-fact"
+hint = "the last fact, with no closing line after it"
+
+[[axes.ending]]
+id = "thanks"
+hint = "a thank you to the people who reported it"
+
+[[axes.ending]]
+id = "upgrade-command"
+hint = "the command or button that gets the update"

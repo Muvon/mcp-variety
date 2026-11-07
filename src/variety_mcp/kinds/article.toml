@@ -1,0 +1,134 @@
+title = "Article"
+description = "A blog post or article: the angle and the structure."
+
+[[approaches]]
+id = "how-to-guide"
+name = "How-to guide"
+how = "Teach one task step by step so the reader can repeat it, with the result they should see after each step."
+
+[[approaches]]
+id = "case-study"
+name = "Case study"
+how = "Follow one real case through the problem, the choices made and the result."
+
+[[approaches]]
+id = "contrarian"
+name = "Contrarian view"
+how = "Argue against a common belief with evidence and a fair counterpoint."
+
+[[approaches]]
+id = "list-article"
+name = "List article"
+how = "Group the topic into separate items, each with its own point and example."
+
+[[approaches]]
+id = "explainer"
+name = "Explainer"
+how = "Explain one concept in plain terms with an analogy the reader already knows."
+
+[[approaches]]
+id = "lessons-learned"
+name = "Lessons learned"
+how = "Look back at a project or a year and say what held up and what did not."
+
+[[approaches]]
+id = "comparison"
+name = "Comparison"
+how = "Put two or three options side by side on the points that matter and say which fits whom."
+
+[[approaches]]
+id = "data-story"
+name = "Data story"
+how = "Build the argument on one dataset or measurement and what it shows."
+
+[[approaches]]
+id = "pyramid"
+name = "Answer first"
+how = "State your conclusion up front, then give three supporting reasons, each backed by one fact or example."
+
+[[approaches]]
+id = "situation-complication"
+name = "Situation and complication"
+how = "Lay out the situation readers know, the complication that breaks it, the question that raises, and your answer."
+
+[[approaches]]
+id = "postmortem"
+name = "Postmortem"
+how = "Reconstruct a failure: what happened in time order, the root cause, what you changed, and what is still unresolved."
+
+[[approaches]]
+id = "faq"
+name = "Questions and answers"
+how = "Answer the five questions people really ask about the topic, each under its own heading with the direct answer first."
+
+[[axes.opener]]
+id = "scene"
+hint = "a concrete scene or anecdote"
+
+[[axes.opener]]
+id = "number"
+hint = "a surprising number"
+
+[[axes.opener]]
+id = "claim"
+hint = "a direct claim the article will defend"
+
+[[axes.opener]]
+id = "reader-question"
+hint = "a question the reader already has"
+
+[[axes.opener]]
+id = "quote"
+hint = "a line from a customer, an expert or a document"
+
+[[axes.opener]]
+id = "mistake"
+hint = "a mistake you or someone else made"
+
+[[axes.length]]
+id = "400"
+hint = "about 400 words"
+
+[[axes.length]]
+id = "600"
+hint = "about 600 words"
+
+[[axes.length]]
+id = "900"
+hint = "about 900 words"
+
+[[axes.length]]
+id = "1200"
+hint = "about 1,200 words"
+
+[[axes.length]]
+id = "1800"
+hint = "about 1,800 words"
+
+[[axes.length]]
+id = "2500"
+hint = "about 2,500 words"
+
+[[axes.ending]]
+id = "main-point"
+hint = "the main point restated in one plain sentence"
+
+[[axes.ending]]
+id = "open-question"
+hint = "an open question the reader can think about"
+
+[[axes.ending]]
+id = "next-step"
+hint = "one concrete next step"
+
+[[axes.ending]]
+id = "no-recap"
+hint = "a closing sentence that adds a new thought instead of a recap"
+
+[[axes.ending]]
+id = "further-reading"
+hint = "a pointer to one resource to read next"
+
+[[axes.ending]]
+id = "callback"
+hint = "a return to the scene or number the article began with"
