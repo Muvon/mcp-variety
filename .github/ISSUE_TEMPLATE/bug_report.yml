@@ -1,0 +1,50 @@
+name: Bug Report
+description: Report a bug or unexpected behavior
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: The tool call (name and arguments) and anything else needed to see the bug
+      placeholder: |
+        1. Call variety_pick with kind "post" and scope "acme"
+        2. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What you expected to happen
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      value: |
+        - OS: [e.g., macOS 15, Ubuntu 24.04]
+        - Python version: [output of python --version]
+        - mcp-variety version: [e.g., 0.1.0]
+        - AI client: [e.g., Claude Code, Claude Desktop, Octomind]
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Error text or relevant server output
+      render: shell

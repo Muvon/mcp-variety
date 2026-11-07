@@ -1,8 +1,28 @@
+<div align="center">
+
 # mcp-variety
 
-<!-- mcp-name: io.github.muvon/mcp-variety -->
+**A local MCP server that gives an AI a different approach and form for each piece of a repeated writing job**
 
-mcp-variety is a small MCP server that runs on your machine. An AI that writes the same kind of text again and again (social posts, replies, emails) falls into habits: the same opening, the same structure, the same closing line. Before each new piece, the AI calls this server and gets a short protocol: one approach to take and one form to use (how to open, how long, how to end), picked at random from built-in writing patterns. It never hands out a recent combination again for the same account or project. The server also ships plain rules for sounding less like a machine and a checker that finds common AI-writing tells in a draft. It uses no model, no network and no account. It is the free, local option; [Unsame](https://unsame.io) is the hosted one that matches each input to a fitting approach.
+[![CI](https://github.com/muvon/mcp-variety/actions/workflows/ci.yml/badge.svg)](https://github.com/muvon/mcp-variety/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/mcp-variety.svg)](https://pypi.org/project/mcp-variety/)
+[![Python](https://img.shields.io/badge/Python-3.11+-blue.svg?logo=python&logoColor=white)](https://www.python.org)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![MCP](https://img.shields.io/badge/MCP-stdio-green.svg)](https://modelcontextprotocol.io)
+
+[Install](#install) · [Tools](#tools) · [Measured result](#measured-result) · [Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md)
+
+MCP Registry: [`io.github.Muvon/mcp-variety`](https://registry.modelcontextprotocol.io)
+
+</div>
+
+<!-- mcp-name: io.github.Muvon/mcp-variety -->
+
+---
+
+An AI that writes the same kind of text again and again (social posts, replies, emails) falls into habits: the same opening, the same structure, the same closing line. mcp-variety is a small MCP server that runs on your machine and breaks those habits. Before each new piece, the AI calls it and gets one approach and one form (how to open, how long, how to end), picked at random so that no recent combination repeats for the same account or project. In a test with Claude Sonnet, the share of texts that started with the same three words fell from 58.3% to 2.5% ([details](#measured-result)). The server also ships plain rules against common AI-writing tells and a checker for drafts, and it uses no model, no network and no account.
+
+mcp-variety is the free, local option. [Unsame](https://unsame.io) is the hosted one that matches each input to a fitting approach.
 
 ## Example
 
@@ -114,6 +134,10 @@ uv build
 uv run python scripts/smoke_wheel.py dist/*.whl   # starts the built wheel and lists its tools
 uv run python bench/run.py                          # the benchmark; needs the claude CLI
 ```
+
+## Contributing
+
+Bug reports, ideas and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md). Report security issues privately as described in [SECURITY.md](SECURITY.md).
 
 ## License
 
